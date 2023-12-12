@@ -1,0 +1,10 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	dev = !git checkout development && git pull origin development
+ 	brc = "!f() { git branch yegorsch/$1 && git checkout yegorsch/$1; }; f"
+	dup = !git checkout development && git pull && git checkout - && git merge development
+[push]
+	autoSetupRemote = true
